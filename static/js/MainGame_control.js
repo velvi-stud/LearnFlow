@@ -44,6 +44,15 @@ function assign_page(){
             }
         }
     );
+    let ll;
+    for(let i = 1; i<=6; i++){
+        ll='#lvl'+i
+        console.log(ll)
+        if(i>parseInt(lvl)){
+            $(ll).remove();
+        }
+    }
+
 }
 
 // per far uscire l'user

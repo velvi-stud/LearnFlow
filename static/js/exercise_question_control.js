@@ -1,6 +1,6 @@
 var data
 var es
-
+var fl=false
 
 // settaggi della pagina
 function assign_page() {
@@ -41,7 +41,6 @@ function carica(jsondata,ex){
 function controlla(){
     var corr = data[es].corretta
     console.log(corr)
-    var fl = false
     for(var i = 0 ;i<4;i++){
         var id_elem = "btnradio"
         var a = i+1
@@ -52,43 +51,46 @@ function controlla(){
             break
         }
     }
-    if(fl){
-        alert("brav")
-    }else{
-        alert("strunz")
-    }
 }
 
 
 
 function load_back(){
-    let d = parseInt(es_copy)-1
+    let d = parseInt(es)-1
     let z = $('#score').text()
-    window.location.href = "/exercise_flow_chart/"+d+"/"+z
+    window.location.href = "/exercise_multiple_question/"+d+"/"+parseInt(z);
 }
 
 async function load_next(){
-    let point=1;
-    point = point * check();
+    controlla()
+    let point=0;
+    if(fl){
+     point = 100;
+    }
     console.log("done: "+ point)
     let z = $('#score').text()
     point = point + parseInt(z);
     point_scored=point;
     console.log("total:"+point)
-    let d = parseInt(es_copy)+1
+    let d = parseInt(es)+1
     // await sleep(5000)
-    window.location.href = "/exercise_flow_chart/"+d+"/"+point.toString()
+    window.location.href = "/exercise_multiple_question/"+d+"/"+point.toString()
 }
 
 async function load_end(){
-    let point=1;
-    point = point * check();
+    controlla()
+    let point=0;
+    if(fl){
+     point = 100;
+    }
     console.log("done: "+ point)
     let z = $('#score').text()
     point = point + parseInt(z);
+    point_scored=point;
     console.log("total:"+point)
+    let d = parseInt(es)+1
     // await sleep(5000)
-    window.location.href = "/end_exercise/"+point;
+    window.location.href = "/exercise_flow_chart/"+1+"/"+point.toString()
 }
 
 
