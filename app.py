@@ -158,6 +158,17 @@ def exercise_flow_chart(pt, pnt):
                                pnt=session['pnt'], score=pnt)
 
 
+@app.route('/exercise_multiple_question/<pt>/<pnt>', methods=['GET'])
+def exercise_multiple_question(pt, pnt):
+    with open("static/json/multiple_question.json") as file:
+        data = json.load(file)
+    if "username" not in session and "pnt" not in session:
+        return redirect(url_for("login"))
+    else:
+        return render_template('Exercise_question.html', data=data, ex=pt, username=session['username'],
+                               pnt=session['pnt'], score=pnt)
+
+
 @app.route('/theory/<pt>', methods=['GET'])
 def theory(pt):
     return render_template('Theory.html', ex=pt, username=session['username'], pnt=session['pnt'])
