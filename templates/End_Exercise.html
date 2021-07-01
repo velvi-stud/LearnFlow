@@ -14,7 +14,8 @@
           crossorigin="anonymous">
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <link href="/static/css/transalte_btn.css" rel="stylesheet">
+    <link href="/static/css/translate_btn.css" rel="stylesheet">
+    <script src="/static/js/translate_control.js"></script>
 
     <!-- miei -->
     <link href="/static/css/stylesheet.css" rel="stylesheet">
@@ -33,6 +34,28 @@
     <p id="lvl">{{lvl}}</p>
     <p id="score">{{score}}</p>
 </div>
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+    <div class="container-fluid">
+
+        <div class="justify-content-start btn">
+            <a class="navbar-brand" href="/MainGame">
+                <h2 class="h1" translate="no"> LearnFlow </h2>
+            </a>
+        </div>
+
+        <div class="nav-item mt-3">
+            <div id="google_translate_element">
+                <!--BUTTON FOR TRANSLATION-->
+            </div>
+        </div>
+
+    </div>
+</nav>
+
 
 <div class="mb-4"></div>
 

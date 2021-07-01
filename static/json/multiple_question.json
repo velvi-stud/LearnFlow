@@ -1,21 +1,41 @@
 {
   "1":{
-    "esercizio": "Cosa è un algoritmo",
+  "esercizio": "What is the definition of algorithm",
+  "risposte": [
+    "It's a synonymous of program",
+    "It's a procedure that performs a finite sequence of operations",
+    "It's a provedure that does not necessarly end",
+    "It's a form of computation"
+  ],
+  "corretta":2
+  },
+  "2":{
+    "esercizio": "When an algorithm is written in the form of a programming language, it becomes a _________",
     "risposte": [
-      "E' sinonimo di programma",
-      "Designa una procedura che esegue una sequenza finita di operazioni",
-      "Designa una procedura che non termina necessariamente",
-      "Indica una forma di calcolo"
+      "Flowchart",
+      "Program",
+      "Pseudo code",
+      "Syntax"
     ],
     "corretta": 2
   },
-  "2":{
-    "esercizio": "ccCosa è un algoritmo",
+  "3":{
+    "esercizio": "The word ____________comes from the name of a Persian mathematician Abu Ja’far Mohammed ibn-i Musa al Khowarizmi",
     "risposte": [
-      "ccE' sinonimo di programma",
-      "ccDesigna una procedura che esegue una sequenza finita di operazioni",
-      "ccDesigna una procedura che non termina necessariamente",
-      "ccIndica una forma di calcolo"
+       "Flowchart",
+       "Flow",
+       "Algorithm",
+       "Syntax"
+    ],
+    "corretta":3
+  },
+  "4":{
+    "esercizio": "Actual instructions in flowcharting are represented in __________",
+    "risposte": [
+       "Circles",
+       "Boxes",
+       "Arrows",
+       "Lines"
     ],
     "corretta":2
   }

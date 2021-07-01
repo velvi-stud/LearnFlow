@@ -19,7 +19,7 @@ function exit_user(){
 function start_exercise(){
     let ex = $("#ex").text();
     ex=ex.toString()
-    window.location.href = "/exercise_flow_chart/"+parseInt(ex.toString())+"/"+"0"
+    window.location.href = "/exercise_multiple_question/"+parseInt(ex.toString())+"/"+"0"
 }
 
 function go_home(){

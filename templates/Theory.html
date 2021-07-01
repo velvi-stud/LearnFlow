@@ -15,7 +15,9 @@
           crossorigin="anonymous">
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <link href="/static/css/transalte_btn.css" rel="stylesheet">
+    <link href="/static/css/translate_btn.css" rel="stylesheet">
+    <script src="/static/js/translate_control.js"></script>
+
     <link href="/static/css/stylesheet.css" rel="stylesheet">
     <script src="/static/js/cookie_handler.js" ></script>
     <script src="/static/js/status_player.js"></script>
@@ -35,8 +37,8 @@
 
         <div class="container-fluid">
 
-            <div class="justify-content-start">
-                <a class="navbar-brand" href="#">
+            <div class="justify-content-start btn">
+                <a class="navbar-brand" href="/MainGame">
                     <h2 class="h1" translate="no"> LearnFlow </h2>
                 </a>
             </div>
@@ -98,6 +100,9 @@
                         <li class="nav-item">
                             <a class="nav-link  text-right" href="#a2">Introduction to algorithms</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-right" href="#a3">Flow Chart</a>
+                        </li>
                     </ul>
             </nav>
         <hr>
@@ -130,22 +135,37 @@
                 way to stow packages in a container, or find if very large numbers (100-digits and more) are prime.)
             </p>
         </div>
+
+        <div id="a3" class="my-2">
+            <h4 class="title text-center display-6">Flow chart</h4>
+            <p>
+                The flow chart is a graphical representation of the operations to be performed for the execution of
+                an algorithm. Each single step is displayed through a series of standard symbols.It is essentially a
+                graphic modeling language in which the operations to be performed are represented  by conventional
+                shapes (rectangles, rhombuses, hexagons, parallelograms, rectangles ....)
+                each with a precise logical meaning and within which a textual indication describes the activity to
+                be carried out. The sequence in which the operations must be carried out is represented with connection
+                arrows, also called connectors
+<!--                <img src="/static/img/new_levels/circular-chart%20(3).png"  class="img-fluid"  alt="">-->
+            </p>
+        </div>
+
     </div>
 
 
     <!--RENDILE INVISIBILI A CONVENIENZA [se c'è o no un altro (tipo di) esercizio]-->
     <div class="row p-2 justify-content-around">
-        <div  id = "back" class="col-4 m-2 text-center container-fluid">
-            <div class="">
+        <div  id = "back" class="col-4 m-2 text-center justify-content-center  d-flex">
+            <div class="btn">
                     <button type="button" class="btn btn-success" onclick="go_home()">
                       <h4>GO HOME</h4>
                     </button>
             </div>
         </div>
-        <div  id = "next" class="col-4 m-2 text-center container-fluid ">
-            <div class="">
+        <div  id = "next" class="col-4 m-2 text-center justify-content-center  d-flex">
+            <div class="btn">
                 <button type="button" class="btn btn-success" onclick="start_exercise()">
-                  <h4>GO TO EXERCISE</h4>
+                  <h4>EXERCISES</h4>
                 </button>
             </div>
         </div>
