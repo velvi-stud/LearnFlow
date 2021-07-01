@@ -5,22 +5,18 @@
 <br />
 <p align="center">
   <a href="https://github.com/velvi-stud/LearnFlow-v2">
-    <img src="/static/img/icon-512.jpeg" alt="Logo">
+    <img src="/static/img/icon-512.jpeg" alt="Logo" width="126" height="126">
   </a>
 
   <h3 align="center">LearnFlow</h3>
 
   <p align="center">
-    .
     <br />
     <a href="https://github.com/velvi-stud/LearnFlow-v2"><strong>Explore the docs »</strong></a>
-  .
     <br />
     <a href="https://github.com/velvi-stud/LearnFlow-v2/issues">Report Bug</a>
-  .
     <br />
     <a href="https://github.com/velvi-stud/LearnFlow-v2/issues">Request Feature</a>
-  .
   </p>
 </p>
 
@@ -83,14 +79,20 @@ This is an example of how to list things you need to use the software and how to
 
 * Pyhton to start a local server
 >  To install python follow this [link](https://www.python.org/downloads/)
+> To manipolate better the code we raccomand [PyCharm](https://www.jetbrains.com/pycharm/) 
 
 ### Installation
 
 1. Clone the repo on a specific folder
    ```sh
-   git clone https://github.com/velvi-stud/LearnFlow-v2
+   $ git clone https://github.com/velvi-stud/LearnFlow-v2
    ```
-2. Open a repo as a file 
+2. Open that folder as a python project
+3. Install the libreries
+  '''sh
+  $ pip install -r requirements.txt
+  '''
+  Eventually you can find all libreries listed into file "requirement.txt" in a folder
 
 
 <!-- USAGE EXAMPLES -->
