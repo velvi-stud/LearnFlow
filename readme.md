@@ -82,18 +82,27 @@ This is an example of how to list things you need to use the software and how to
 > To manipolate better the code we raccomand [PyCharm](https://www.jetbrains.com/pycharm/) 
 
 ### Installation
-
 1. Clone the repo on a specific folder
    ```sh
    $ git clone https://github.com/velvi-stud/LearnFlow-v2
    ```
-2. Open that folder as a python project
-3. Install the libreries
+2. Activate the virtual environment python (venv)
+  ```sh
+   $ .\venv\Scripts\
+   ```
+5. Eventually, if this doesn't work, install the libreries
   ```sh
   $ pip install -r requirements.txt
-  '''
+  ```
   Eventually you can find all libreries listed into file "requirement.txt" in a folder
-
+4. Start Flask
+   ```sh
+   $ flask run -h 0.0.0.0 -p 5000
+   ```
+#       a) questo comando fa partire flask sulla porta 5000
+#       b) ed accetta ogni connessione che parte sulla macchina
+#   4) apparirà un link, cliccateci sopra, verrete redirezionati
+#   5) CTRL+C per chiudere flask
 
 <!-- USAGE EXAMPLES -->
 ## Usage
