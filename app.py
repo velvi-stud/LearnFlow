@@ -108,7 +108,7 @@ def registration():
             user_info.insert_one(
                 {
                     'username': request.form['username'],
-                    'lvl': '0',
+                    'lvl': '1',
                     'pnt': '0'
                 }
             )

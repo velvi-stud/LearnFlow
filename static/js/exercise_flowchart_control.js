@@ -70,6 +70,7 @@ function move(element){
         element.classList.add("off")
         pos.appendChild(element)
     }
+    drawLines()
 }
 
 function updateposizioni(element){
