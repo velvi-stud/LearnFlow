@@ -61,7 +61,7 @@ buggyCodes is a project developed for a modern Web Technologies course, attended
 This project was built using various programming lenguages, technologies, frameworks and libraries such as:
 - [Bootstrap](https://getbootstrap.com)
 - [JQuery](https://jquery.com)
-* [Flask](https://flask.palletsprojects.com)
+- [Flask](https://flask.palletsprojects.com)
 
 
 
@@ -89,7 +89,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Open that folder as a python project
 3. Install the libreries
-  '''sh
+  ```sh
   $ pip install -r requirements.txt
   '''
   Eventually you can find all libreries listed into file "requirement.txt" in a folder
