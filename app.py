@@ -9,7 +9,8 @@
 import json
 
 import pymongo
-from flask import Flask, jsonify, request, render_template, session, redirect, url_for
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for, send_from_directory, \
+    make_response
 from flask_cors import CORS
 import bcrypt
 
@@ -182,6 +183,16 @@ def end_exercise(pnt=-1):
         return render_template("End_Exercise.html", username=session['username'], pnt=session['pnt'],
                                score=pnt, lvl=session['lvl'])
 
+@app.route('/manifest.json')
+def manifest():
+    return send_from_directory('static', 'manifest.json')
+
+
+@app.route('/sw.js')
+def service_worker():
+    response = make_response(send_from_directory('static', 'sw.js'))
+    response.headers['Cache-Control'] = 'no-cache'
+    return response
 
 if __name__ == '__main__':
     app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
