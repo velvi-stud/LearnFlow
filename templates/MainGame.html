@@ -118,25 +118,27 @@
 <!-- START LEVELS DECLARATION -->
                 <div class="row justify-content-center mx-auto mb-2">
 <!-- UNTIL NOW -->
-                    <div class="due col-12 row justify-content-around m-2">
+                    <div class="due col-12 row justify-content-around m-2 text-center">
 
                         <div class="col-6"
+                             id="div1"
                              data-livello="1"
                              data-toggle="collapse"
                              data-target="#lvl1"
                              onclick="alternatecollapse('#lvl1','#lvl2')">
-                                <div class=" lvl-overlap">
+                                <div class=" lvl-overlap btn">
                                     <img src="/static/img/new_levels/circular-chart%20(1).png"  class="img-overlap"  alt="">
                                     <span class=" h2 txt-overlap" style="color: black"> 1 </span>
                                 </div>
                         </div>
 
                         <div class="col-6"
+                             id="div2"
                              data-livello="2"
                              data-toggle="collapse"
                              data-target="#lvl2"
                              onclick="alternatecollapse('#lvl2','#lvl1')">
-                                <div class=" lvl-overlap" >
+                                <div class=" lvl-overlap btn">
                                     <img src="/static/img/new_levels/circular-chart%20(2).png"  class="img-overlap"  alt="">
                                     <span class=" h2 txt-overlap" style="color: black"> 2 </span>
                                 </div>
@@ -149,30 +151,33 @@
                         <div class=" card card-body">
                             <div class="row justify-content-around">
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                <h4 style="display: none" id="lvla1" class="text-center"> You should level up to access here </h4>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                <div class="row col-12" id="lvlb1">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 1
+                                            </button>
+                                         </a>
+                                    </div>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 1
+                                            </button>
+                                         </a>
+                                    </div>
 
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 1
+                                            </button>
+                                         </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,42 +186,46 @@
                         <div class=" card card-body">
                             <div class="row justify-content-around">
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 2
-                                        </button>
-                                     </a>
-                                </div>
+                                <h4 style="display: none" id="lvla2" class="text-center"> You should level up to access here </h4>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 2
-                                        </button>
-                                     </a>
-                                </div>
+                                <div class="row col-12" id="lvlb2">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 2
+                                            </button>
+                                         </a>
+                                    </div>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 2
-                                        </button>
-                                     </a>
-                                </div>
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 2
+                                            </button>
+                                         </a>
+                                    </div>
 
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 2
+                                            </button>
+                                         </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 <!-- fine collapse livelli 1&2 -->
 
-                    <div class="uno col-12 row justify-content-center m-2" >
+                    <div  class="uno col-12 row justify-content-center m-2 text-center" >
                         <div class="col-12"
+                             id="div3"
                              data-livello="3"
                              data-toggle="collapse"
                              data-target="#lvl3">
-                            <div class=" lvl-overlap" >
+                            <div class=" lvl-overlap btn" >
                                 <img src="/static/img/new_levels/circular-chart%20(3).png"  class="img-overlap"  alt="">
                                 <span class=" h2 txt-overlap" style="color: black"> 3 </span>
                             </div>
@@ -224,59 +233,64 @@
                     </div>
 
 <!--collapse livello 3 -->
-                     <div id="lvl3" class="col-12 collapse ">
+                     <div  id="lvl3"  class="col-12 collapse ">
                         <div class=" card card-body">
-                            <div class="row justify-content-around">
+                            <div class="row justify-content-around text-center" >
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 3
-                                        </button>
-                                     </a>
+                                <h4 style="display: none" id="lvla3" class="text-center"> You should level up to access here </h4>
+
+                                <div class="row col-12" id="lvlb3">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 3
+                                            </button>
+                                         </a>
+                                    </div>
+
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 3
+                                            </button>
+                                         </a>
+                                    </div>
+
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 3
+                                            </button>
+                                         </a>
+                                    </div>
                                 </div>
-
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 3
-                                        </button>
-                                     </a>
-                                </div>
-
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 3
-                                        </button>
-                                     </a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
  <!-- fine collapse livello 3 -->
 
 
-                    <div class="due col-12 row justify-content-around m-2" >
+                    <div class="due col-12 row justify-content-around m-2 text-center" >
 
                         <div class="col-6"
+                             id="div4"
                              data-livello="4"
                              data-toggle="collapse"
                              data-target="#lvl4"
                              onclick="alternatecollapse('#lvl4','#lvl5')">
-                            <div class=" lvl-overlap" >
+                            <div class=" lvl-overlap btn">
                                 <img src="/static/img/new_levels/circular-chart%20(4).png"  class="img-overlap"  alt="">
                                 <span class=" h2 txt-overlap" style="color: black"> 4 </span>
                             </div>
                         </div>
 
                         <div class="col-6"
+                             id="div5"
                              data-livello="5"
                              data-toggle="collapse"
                              data-target="#lvl5"
                              onclick="alternatecollapse('#lvl5','#lvl4')">
-                            <div class=" lvl-overlap" >
+                            <div class=" lvl-overlap btn" >
                                 <img src="/static/img/new_levels/circular-chart%20(5).png"  class="img-overlap"  alt="">
                                 <span class=" h2 txt-overlap" style="color: black"> 5 </span>
                             </div>
@@ -289,73 +303,79 @@
                         <div class=" card card-body">
                             <div class="row justify-content-around">
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                <h4 style="display: none" id="lvla4" class="text-center"> You should level up to access here </h4>
+                                <div class="row col-12" style="display: block" id="lvlb4">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 4
+                                            </button>
+                                         </a>
+                                    </div>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 4
+                                            </button>
+                                         </a>
+                                    </div>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 1
-                                        </button>
-                                     </a>
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 4
+                                            </button>
+                                         </a>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
 
-                     <div id="lvl5" class="col-12 collapse ">
+                     <div id="lvl5" class="col-12 collapse " class="text-center">
                         <div class=" card card-body">
-                            <div class="row justify-content-around">
+                            <div class="row justify-content-around text-center">
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 1
-                                        </button>
-                                     </a>
+                                <h4 style="display: none" id="lvla5" class="text-center"> You should level up to access here </h4>
+
+                                <div class="row col-12" id="lvlb5">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 5
+                                            </button>
+                                         </a>
+                                    </div>
+
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 5
+                                            </button>
+                                         </a>
+                                    </div>
+
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 5
+                                            </button>
+                                         </a>
+                                    </div>
                                 </div>
-
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 1
-                                        </button>
-                                     </a>
-                                </div>
-
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 1
-                                        </button>
-                                     </a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
  <!-- fine collapse livelli 4&5 -->
 
-                    <div class="uno row justify-content-center m-2">
+                    <div class="uno row justify-content-center m-2 text-center">
                         <div class="col-12"
+                             id="div6"
                              data-livello="6"
                              data-toggle="collapse"
                              data-target="#lvl6">
-                            <div class=" lvl-overlap" >
+                            <div class=" lvl-overlap btn">
                                 <img src="/static/img/new_levels/circular-chart%20(0).png"  class="img-overlap"  alt="">
                                 <span class=" h2 txt-overlap" style="color: black"> 6 </span>
                             </div>
@@ -367,30 +387,33 @@
                         <div class=" card card-body">
                             <div class="row justify-content-around">
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('theory', pt=1) }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Theory level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                <h4 style="display: none" id="lvla6" class="text-center"> You should level up to access here </h4>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Questions level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                <div class="row col-12" id="lvlb6">
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('theory', pt=1) }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Theory level 6
+                                            </button>
+                                         </a>
+                                    </div>
 
-                                <div class="col-4 text-center">
-                                    <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
-                                        <button class="btn btn-primary" type="button">
-                                            Flow-Chart level 1
-                                        </button>
-                                     </a>
-                                </div>
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_multiple_question', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Questions level 6
+                                            </button>
+                                         </a>
+                                    </div>
 
+                                    <div class="col-4 text-center">
+                                        <a href= "{{ url_for('exercise_flow_chart', pt='1', pnt='0') }}">
+                                            <button class="btn btn-primary" type="button">
+                                                Flow-Chart level 6
+                                            </button>
+                                         </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

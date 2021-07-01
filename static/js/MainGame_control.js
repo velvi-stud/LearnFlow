@@ -44,12 +44,14 @@ function assign_page(){
             }
         }
     );
-    let ll;
+    let ll, dd;
     for(let i = 1; i<=6; i++){
-        ll='#lvl'+i
-        console.log(ll)
+        ll='#lvla'+i
+        dd='#lvlb'+i
+        console.log(ll+" "+dd)
         if(i>parseInt(lvl)){
-            $(ll).remove();
+            $(ll).show();
+            $(dd).hide();
         }
     }
 
