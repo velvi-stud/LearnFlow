@@ -88,13 +88,15 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Activate the virtual environment python (venv)
   ```sh
-   $ .\venv\Scripts\
+   $ .\venv\Scripts\activate
    ```
-5. Eventually, if this doesn't work, install the libreries
+>Eventually, if this doesn't work, install the libreries
   ```sh
   $ pip install -r requirements.txt
   ```
-  Eventually you can find all libreries listed into file "requirement.txt" in a folder
+
+
+Eventually you can find all libreries listed into file "requirement.txt" in a folder
 4. Start Flask
    ```sh
    $ flask run -h 0.0.0.0 -p 5000
