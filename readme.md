@@ -1,15 +1,5 @@
 
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+<!--  README LEARN FLOW  -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -23,19 +13,17 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/static/image/icon-512.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">LearnFlow</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/velvi-stud/LearnFlow-v2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
@@ -74,7 +62,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-A new way to learn programming through flow chart 
+LearnFlow is the new way to learn programming through flow chart 
 buggyCodes is a project developed for a modern Web Technologies course, attended at University of Naples "Parthenope". 
   A demo of the project and a video ([mock-idea](https://www.youtube.com/watch?v=23itJesVfn0&t=4s)) has been presented at the Hackathon "Gamification in Programming Education".
 
