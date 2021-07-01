@@ -79,7 +79,7 @@ def MainGame():
         return redirect(url_for("login"))
 
 
-@app.route('/logout')
+@app.route('/logout/')
 def logout():
     session.pop('username', None)
     session.pop('lvl', None)
@@ -87,7 +87,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route('/registration', methods=['POST', 'GET'])
+@app.route('/registration/', methods=['POST', 'GET'])
 def registration():
     if request.method == 'POST':
         if request.form['password'] != request.form['pass_conf']:
