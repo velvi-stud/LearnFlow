@@ -95,26 +95,20 @@ This project was built using various programming lenguages, technologies, framew
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* Pyhton 
+
+* Web Browser to show the application wab
+> Install a browser such as [Chrome](https://www.google.com/intl/it_it/chrome/), [Edge](https://www.microsoft.com/it-it/edge) or [Firefox](https://www.mozilla.org/it/firefox/new/)
+
+* Pyhton to start a local server
 >  To install python follow this [link](https://www.python.org/downloads/)
-  
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo on a specific folder
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/velvi-stud/LearnFlow-v2
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
+2. Open a repo as a file 
 
 
 <!-- USAGE EXAMPLES -->
