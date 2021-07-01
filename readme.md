@@ -78,27 +78,27 @@ This is an example of how to list things you need to use the software and how to
 > Install a browser such as [Chrome](https://www.google.com/intl/it_it/chrome/), [Edge](https://www.microsoft.com/it-it/edge) or [Firefox](https://www.mozilla.org/it/firefox/new/)
 
 * Pyhton to start a local server
->  To install python follow this [link](https://www.python.org/downloads/)
+> To install python follow this [link](https://www.python.org/downloads/)
 > To manipolate better the code we raccomand [PyCharm](https://www.jetbrains.com/pycharm/) 
 
 ### Installation
 1. Clone the repo on a specific folder
-   ```sh
-   $ git clone https://github.com/velvi-stud/LearnFlow-v2
-   ```
+  ```sh
+  $ git clone https://github.com/velvi-stud/LearnFlow-v2
+  ```
 2. Activate the virtual environment python (venv)
   ```sh
-   $ .\venv\Scripts\activate
-   ```
->Eventually, you can find all libreries listed into file "requirement.txt" in a folder
-  ```sh
-  $ pip install -r requirements.txt
+  $ .\venv\Scripts\activate
   ```
+>     Eventually, you can find all libreries listed into file "requirement.txt" in a folder
+    ```sh
+    $ pip install -r requirements.txt
+    ```
 
 3. Make sure your internet connection is on (for DB connection) and start Flask (on port 5000)
-   ```sh
-   $ flask run -p 5000
-   ```
+  ```sh
+  $ flask run -p 5000
+  ```
 4. After that the terminal will show you an address (usually ``` 127.0.0.1:5000 ```), where you can copy and paste into url bar of the browser. That link will show you the web app FlowChart.
 
 
@@ -126,9 +126,9 @@ _Apache license_
 <!-- CONTACT -->
 ## Contact
 
-Romeo Velvi - romeo.velvi001@studenti.uniparthenope.it
-Pasquale Casoria - pasquale.casoria001@studenti.uniparthenope.it
-Crescenzo Bencivenga - crescenzo.bencivenga001@studenti.uniparthenope.it
+Romeo Velvi - romeo.velvi001@studenti.uniparthenope.it <br>
+Pasquale Casoria - pasquale.casoria001@studenti.uniparthenope.it <br>
+Crescenzo Bencivenga - crescenzo.bencivenga001@studenti.uniparthenope.it <br>
 
 Project Link: [https://github.com/velvi-stud/LearnFlow-v2](https://github.com/velvi-stud/LearnFlow-v2)
 
