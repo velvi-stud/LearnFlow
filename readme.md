@@ -62,6 +62,7 @@ This project was built using various programming lenguages, technologies, framew
 - [Bootstrap](https://getbootstrap.com)
 - [JQuery](https://jquery.com)
 - [Flask](https://flask.palletsprojects.com)
+- [MongoDB](https://www.mongodb.com/)
 
 
 
@@ -90,21 +91,18 @@ This is an example of how to list things you need to use the software and how to
   ```sh
    $ .\venv\Scripts\activate
    ```
->Eventually, if this doesn't work, install the libreries
+>Eventually, you can find all libreries listed into file "requirement.txt" in a folder
   ```sh
   $ pip install -r requirements.txt
   ```
 
-
-Eventually you can find all libreries listed into file "requirement.txt" in a folder
-4. Start Flask
+3. Make sure your internet connection is on (for DB connection) and start Flask (on port 5000)
    ```sh
-   $ flask run -h 0.0.0.0 -p 5000
+   $ flask run -p 5000
    ```
-#       a) questo comando fa partire flask sulla porta 5000
-#       b) ed accetta ogni connessione che parte sulla macchina
-#   4) apparirà un link, cliccateci sopra, verrete redirezionati
-#   5) CTRL+C per chiudere flask
+4. After that the terminal will show you an address (usually ``` 127.0.0.1:5000 ```), where you can copy and paste into url bar of the browser. That link will show you the web app FlowChart.
+
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
