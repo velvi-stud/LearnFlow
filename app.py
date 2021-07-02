@@ -109,7 +109,7 @@ def registration():
                 {
                     'username': request.form['username'],
                     'lvl': '1',
-                    'pnt': '0'
+                    'pnt': 0
                 }
             )
             return redirect(url_for('login'))
@@ -126,7 +126,7 @@ def update_data(username, lvl, pnt):
         {
             "username": username,
             "lvl": lvl,
-            "pnt": pnt,
+            "pnt": int(pnt),
         }
     }
     user_info.update_one(myquery, newvalues)
@@ -135,7 +135,9 @@ def update_data(username, lvl, pnt):
 
 @app.route('/get_top', methods=['GET'])
 def get_top():
-    item = user_info.find().sort("pnt", -1).limit(16)
+    item = user_info.find()
+    item = item.sort("pnt", -1)
+    item = item.limit(16)
     i = 0
     x = {i: {'n_item': str(item.count())}}
     for doc in item:
