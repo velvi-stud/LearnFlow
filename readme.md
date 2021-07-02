@@ -60,6 +60,7 @@ has been presented at the Hackathon "Gamification in Programming Education".
 
 ### Built With
 This project was built using various programming lenguages, technologies, frameworks and libraries.
+<br>
 ####_Client-Side_ <br>
 * HTML and CSS with [Bootstrap](https://getbootstrap.com) for a better wab app approach experience
 * [JavaScript](https://www.javascript.com/) as scripting lenguage to make a dynamic page and handle of events (such us button click, page reload, etc...)
@@ -67,6 +68,7 @@ This project was built using various programming lenguages, technologies, framew
       standing the browsers compatibility "write less do more".
     * [AJAX](https://api.jquery.com/jquery.ajax/) for the creation of interactive web applications, based on an exchange 
       of data in the background between web browsers and, thus, allowing the dynamic updating of a web page without reloading by the user.
+<br>
 ####_Server-Side_ <br>
 * [Pyton](https://www.python.org/) choice as a server-side scripting tool was motivated considering the typical
   architecture of a current web application using flask. 
