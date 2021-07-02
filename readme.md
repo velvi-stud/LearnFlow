@@ -51,8 +51,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-LearnFlow is the new way to learn programming through flow chart 
-buggyCodes is a project developed for a modern Web Technologies course, attended at University of Naples "Parthenope". 
+LearnFlow is the new way to learn programming through flow chart.
+LearnFlow is a project developed for a modern Web Technologies course, attended at University of Naples "Parthenope". 
   A demo of the project and a video ([mock-idea](https://www.youtube.com/watch?v=23itJesVfn0&t=4s)) has been presented at the Hackathon "Gamification in Programming Education".
 
   
@@ -91,10 +91,9 @@ This is an example of how to list things you need to use the software and how to
   $ .\venv\Scripts\activate
   ```
 >     Eventually, you can find all libreries listed into file "requirement.txt" in a folder
-    ```sh
-    $ pip install -r requirements.txt
-    ```
-
+  ```sh
+  $ pip install -r requirements.txt
+  ```
 3. Make sure your internet connection is on (for DB connection) and start Flask (on port 5000)
   ```sh
   $ flask run -p 5000
