@@ -61,21 +61,21 @@ has been presented at the Hackathon "Gamification in Programming Education".
 ### Built With
 This project was built using various programming lenguages, technologies, frameworks and libraries.
 <br>
-###_Client-Side_ <br>
-* HTML and CSS with [Bootstrap](https://getbootstrap.com) for a better wab app approach experience
-* [JavaScript](https://www.javascript.com/) as scripting lenguage to make a dynamic page and handle of events (such us button click, page reload, etc...)
-    * [JQuery](https://jquery.com) as JS library to help and simplify the manipulation and management of DOM
+#### _Client-Side_
+- HTML and CSS with [Bootstrap](https://getbootstrap.com) for a better wab app approach experience
+- [JavaScript](https://www.javascript.com/) as scripting lenguage to make a dynamic page and handle of events (such us button click, page reload, etc...)
+    - [JQuery](https://jquery.com) as JS library to help and simplify the manipulation and management of DOM
       standing the browsers compatibility "write less do more".
-    * [AJAX](https://api.jquery.com/jquery.ajax/) for the creation of interactive web applications, based on an exchange 
+    - [AJAX](https://api.jquery.com/jquery.ajax/) for the creation of interactive web applications, based on an exchange 
       of data in the background between web browsers and, thus, allowing the dynamic updating of a web page without reloading by the user.
-<br>
-###_Server-Side_ <br>
-* [Pyton](https://www.python.org/) choice as a server-side scripting tool was motivated considering the typical
+      
+#### _Server-Side_ 
+- [Pyton](https://www.python.org/) choice as a server-side scripting tool was motivated considering the typical
   architecture of a current web application using flask. 
-    * [Flask](https://flask.palletsprojects.com) it is a microframework for the realization of web apps which it is possible to return the output of the 
+    - [Flask](https://flask.palletsprojects.com) it is a microframework for the realization of web apps which it is possible to return the output of the 
   function associated with a specific url in the form of html, string or json using jinja2 as the template engine
-* [MongoDB](https://www.mongodb.com/) it is a non-relational dbms oriented to documents for data storage. 
-    * [PyMongo](https://pypi.org/project/pymongo/) library to link with the DB to python/flask we use the 
+- [MongoDB](https://www.mongodb.com/) it is a non-relational dbms oriented to documents for data storage. 
+    - [PyMongo](https://pypi.org/project/pymongo/) library to link with the DB to python/flask we use the 
 
 
 
