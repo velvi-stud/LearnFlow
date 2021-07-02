@@ -25,7 +25,6 @@ login_collection = db['LF_login']
 user_info = db['LF_user_info']
 
 
-# base
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -131,9 +130,6 @@ def update_data(username, lvl, pnt):
         }
     }
     user_info.update_one(myquery, newvalues)
-    # item = user_info.find_one({'username': username})
-    # item['_id'] = str(item['_id'])  # da ObjectId a string.
-    # return jsonify({'user_data': item})
     return "1"
 
 
@@ -145,7 +141,6 @@ def get_top():
     for doc in item:
         i = i + 1
         x[i] = {'username': doc['username'], 'pnt': doc['pnt']}
-    print (json.dumps(x))
     return json.dumps(x)
 
 
@@ -173,7 +168,10 @@ def exercise_multiple_question(pt, pnt):
 
 @app.route('/theory/<pt>', methods=['GET'])
 def theory(pt):
-    return render_template('Theory.html', ex=pt, username=session['username'], pnt=session['pnt'])
+    if "username" not in session and "pnt" not in session:
+        return redirect(url_for("login"))
+    else:
+        return render_template('Theory.html', ex=pt, username=session['username'], pnt=session['pnt'])
 
 
 @app.route('/end_exercise/<pnt>', methods=['GET'])

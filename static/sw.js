@@ -1,6 +1,8 @@
 let cacheName = 'LF_pwa_2021';
 let filesToCache = [
-    '/'
+    '/',
+    '/static/img/image1.png',
+    '/static/img/image2.png'
 ];
 self.addEventListener('install', (evt) => {
   console.log('[ServiceWorker] Install');
