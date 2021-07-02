@@ -133,11 +133,6 @@ When you are in a main game page you can see various information:
 To unlock levels you have to achieve score reachable compiling the exercise.
 
 
-<!-- LICENSE -->
-## License
-_Apache license_
-
-
 ## Element explanation
 
 #### MongoDB schema
@@ -203,16 +198,6 @@ Project Link: [https://github.com/velvi-stud/LearnFlow-v2](https://github.com/ve
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+<!-- LICENSE -->
+## License
+_Apache license 2.0_
