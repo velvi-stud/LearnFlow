@@ -24,14 +24,18 @@ function assign_page(){
             type: "GET",
             data: {},
             success: function (data){
+
                 let result = JSON.parse(data);
                 let n = result[0]['n_item'];
+                if (n>16)
+                    n=16
                 let content1 = "<div class=\"row justify-content-center\" translate=\"no\">";
                 let usr, pnt;
                 let content2 = "</div>";
                 let tot_u='', tot_p='';
-                for (let i =1; i<=n ; i++){
+                for (let i =1; i<n ; i++){
                     usr = result[i]['username']
+                    console.log(usr)
                     pnt = result[i]['pnt']
                     tot_u = tot_u.concat(content1).concat(usr).concat(content2)
                     tot_p = tot_p.concat(content1).concat(pnt).concat(content2)
@@ -59,7 +63,6 @@ function assign_page(){
 
 // per far uscire l'user
 function exit_user(){
-    deleteAllCookies()
     window.location.href='/logout'
 }
 

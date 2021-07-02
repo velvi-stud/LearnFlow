@@ -1,189 +1,175 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LearnFlow</title>
+    {% extends "index.html" %}
+    {% block head %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <link href="/static/css/translate_btn.css" rel="stylesheet">
-    <script src="/static/js/translate_control.js"></script>
-
-    <!-- miei -->
-    <link href="/static/css/stylesheet.css" rel="stylesheet">
-    <script src="/static/js/cookie_handler.js" ></script>
-
+    {% endblock %}
 </head>
-
+{% block body %}
 <body onload="assign_page()">
-<div id="imported_var" style="display: none">
-    <p id="usr"> {{ username }} </p>
-    <p id="pnt"> {{ pnt }} </p>
-    <p id="score"> {{ score }} </p>
-</div>
+    <div id="imported_var" style="display: none">
+        <p id="usr"> {{ username }} </p>
+        <p id="pnt"> {{ pnt }} </p>
+        <p id="score"> {{ score }} </p>
+    </div>
 
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-md navbar-light bg-light ">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
 
-    <div class="container-fluid">
+        <div class="container-fluid">
 
-        <div class="justify-content-start btn">
-            <a class="navbar-brand" href="/MainGame">
-                <h2 class="h1" translate="no"> LearnFlow </h2>
-            </a>
-        </div>
+            <div class="justify-content-start btn">
+                <a class="navbar-brand" href="/MainGame">
+                    <h2 class="h1" translate="no"> LearnFlow </h2>
+                </a>
+            </div>
 
-        <div class="nav-item mt-3">
-            <div id="google_translate_element">
+            <div class="nav-item mt-3">
+                <div id="google_translate_element">
+                </div>
+            </div>
+
+            <div class="" >
+                <button class="navbar-toggler dropdown"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#infox">
+                    <i class="fas fa-user"></i>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="infox">
+                    <ul class="navbar-nav ml-auto my-auto">
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="m-auto">
+                                <h1 id="put_username" class="nav-link" style="color: #049dff;" translate="no"> </h1>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4 text-center">
+                            <h4 class="my-auto mr-2">Score </h4>
+                            <h2 class="my-auto " id="put_pnt" style="color: #049dff;"> - </h2>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="">
+                                <button type="button" class="btn btn-success btn-danger" onclick="exit_user()">
+                                    Click to exit
+                                </button>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
+    </nav>
 
-        <div class="" >
-            <button class="navbar-toggler dropdown"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#infox">
-                <i class="fas fa-user"></i>
-            </button>
+    <br>
 
-            <div class="collapse navbar-collapse text-right" id="infox">
-                <ul class="navbar-nav ml-auto my-auto">
+    <!-- contenuto -->
+        <div class="container">
 
-                    <li class="nav-item my-auto ml-4">
-                        <div class="m-auto">
-                            <h1 id="put_username" class="nav-link" style="color: #049dff;" translate="no"> </h1>
-                        </div>
-                    </li>
+            <div class="row">
+                <div class="col-12 justify-content-center my-2 text-center">
 
-                    <li>
-                        <hr>
-                    </li>
+                    <h3>
+                        Multiple choice question
+                    </h3>
 
-                    <li class="nav-item my-auto ml-4 text-center">
-                        <h4 class="my-auto mr-2">Score </h4>
-                        <h2 class="my-auto " id="put_pnt" style="color: #049dff;"> - </h2>
-                    </li>
+                    <h4 id="put-title">
+        <!-- INSERISCI QUI IL TITOLO DELL'ESERCIZIO -->
+                    </h4>
 
-                    <li class="nav-item my-auto ml-4">
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center my-2 text-center">
+
+                <div class="btn-group btn-group-toggle btn-group-vertical col-12" data-toggle="buttons">
+
+                    <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btnradio1" id="radio1"></label>
+
+                    <br>
+                    <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btnradio2" id="radio2"></label>
+
+                    <br>
+                    <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btnradio3" id="radio3"></label>
+
+                    <br>
+                    <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btnradio4" id="radio4"></label>
+
+                </div>
+
+            </div>
+
+                <div class="row p-2 justify-content-around">
+                    <div  id = "back" class="col-4 m-2 text-center container-fluid">
                         <div class="">
-                            <button type="button" class="btn btn-success btn-danger" onclick="exit_user()">
-                                Click to exit
+                            <button type="button" class="btn btn-success" onclick="load_back()">
+                              <h4>BACK</h4>
                             </button>
                         </div>
-                    </li>
+                    </div>
+                    <div  id = "next" class="col-4 m-2 text-center container-fluid ">
+                        <div class="">
+                            <button type="button" class="btn btn-success" onclick="load_next()">
+                              <h4>NEXT</h4>
+                            </button>
+                        </div>
+                    </div>
 
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
+                    <div  id = "finish" class="col-4 m-2 text-center container-fluid " style="display: none">
+                        <div class="">
+                            <button type="button" class="btn btn-success" onclick="load_end()">
+                              <h4>FINISH</h4>
+                            </button>
+                        </div>
+                    </div>
 
-<br>
+    <!--             &lt;!&ndash;CONFIRM BUTTON&ndash;&gt;-->
+    <!--                <div id = "confirm" class="col-4 m-2 text-center container-fluid ">-->
+    <!--                    <button class="btn btn-outline-primary my-4" data-toggle="button" onclick="controlla()">-->
+    <!--                        <h5 class="my-auto"> Confirm </h5>-->
+    <!--                    </button>-->
+    <!--                </div>-->
 
-<!-- contenuto -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-12 justify-content-center my-2 text-center">
-
-                <h3>
-                    Multiple choice question
-                </h3>
-
-                <h4 id="put-title">
-    <!-- INSERISCI QUI IL TITOLO DELL'ESERCIZIO -->
-                </h4>
-
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center my-2 text-center">
-
-            <div class="btn-group btn-group-toggle btn-group-vertical col-12" data-toggle="buttons">
-
-                <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio1" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio1" id="radio1"></label>
-
-                <br>
-                <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio2" id="radio2"></label>
-
-                <br>
-                <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio3" id="radio3"></label>
-
-                <br>
-                <input type="radio" class="btn-check btn-quiz" name="x" id="btnradio4" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio4" id="radio4"></label>
-
-            </div>
-
+                </div>
         </div>
 
-            <div class="row p-2 justify-content-around">
-                <div  id = "back" class="col-4 m-2 text-center container-fluid">
-                    <div class="">
-                        <button type="button" class="btn btn-success" onclick="load_back()">
-                          <h4>BACK</h4>
-                        </button>
-                    </div>
-                </div>
-                <div  id = "next" class="col-4 m-2 text-center container-fluid ">
-                    <div class="">
-                        <button type="button" class="btn btn-success" onclick="load_next()">
-                          <h4>NEXT</h4>
-                        </button>
-                    </div>
-                </div>
 
-                <div  id = "finish" class="col-4 m-2 text-center container-fluid " style="display: none">
-                    <div class="">
-                        <button type="button" class="btn btn-success" onclick="load_end()">
-                          <h4>FINISH</h4>
-                        </button>
-                    </div>
-                </div>
+    <script src="/static/js/exercise_question_control.js"></script>
 
-<!--             &lt;!&ndash;CONFIRM BUTTON&ndash;&gt;-->
-<!--                <div id = "confirm" class="col-4 m-2 text-center container-fluid ">-->
-<!--                    <button class="btn btn-outline-primary my-4" data-toggle="button" onclick="controlla()">-->
-<!--                        <h5 class="my-auto"> Confirm </h5>-->
-<!--                    </button>-->
-<!--                </div>-->
+    <script>
+        carica({{data | tojson | safe}},{{ex}})
+    </script>
 
-            </div>
-    </div>
-
-
-<script src="/static/js/exercise_question_control.js"></script>
-
-<script>
-    carica({{data | tojson | safe}},{{ex}})
-</script>
-
-<script>
-    $( window ).on( "load", function() {
-        if(data[ {{ex}}+1 ]==null){
-            $("#next").attr("style","display: none")
-            $("#finish").attr("style","display: block")
-            console.log("finiti")
-        }
-        if(data[ {{ex}}-1 ] == null){
-            $("#back").attr("style", "display: none")
-        }
-        });
-</script>
+    <script>
+        $( window ).on( "load", function() {
+            if(data[ {{ex}}+1 ]==null){
+                $("#next").attr("style","display: none")
+                $("#finish").attr("style","display: block")
+                console.log("finiti")
+            }
+            if(data[ {{ex}}-1 ] == null){
+                $("#back").attr("style", "display: none")
+            }
+            });
+    </script>
 
 </body>
-
+{% endblock %}
 </html>

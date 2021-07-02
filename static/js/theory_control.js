@@ -12,7 +12,6 @@ function assign_page() {
 
 // per far uscire l'user
 function exit_user(){
-    deleteAllCookies()
     window.location.href='/logout'
 }
 

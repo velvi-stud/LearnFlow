@@ -494,7 +494,6 @@ async function load_end(){
 
 // per far uscire l'user
 function exit_user(){
-    deleteAllCookies()
     window.location.href='/logout'
 }
 

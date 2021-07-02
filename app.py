@@ -139,12 +139,13 @@ def update_data(username, lvl, pnt):
 
 @app.route('/get_top', methods=['GET'])
 def get_top():
-    item = user_info.find().sort("pnt", -1).limit(15)
+    item = user_info.find().sort("pnt", -1).limit(16)
     i = 0
     x = {i: {'n_item': str(item.count())}}
     for doc in item:
         i = i + 1
         x[i] = {'username': doc['username'], 'pnt': doc['pnt']}
+    print (json.dumps(x))
     return json.dumps(x)
 
 
