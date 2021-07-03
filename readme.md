@@ -40,10 +40,13 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#road-map">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#element-explanation">Element expenation</a></li>
+    <ul>
+        <li><a href="#mongodb-schema">MongoDB schema</a></li>
+        <li><a href="#python-route">Python Route</a></li>
+      </ul>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
