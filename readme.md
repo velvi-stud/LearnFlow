@@ -100,7 +100,7 @@ This is an example of how to list things you need to use the software and how to
 ### Installation
 1. Clone the repo on a specific folder
   ```sh
-  $ git clone https://github.com/velvi-stud/LearnFlow-v2
+  $ git clone https://github.com/velvi-stud/LearnFlow
   ```
 2. Activate the virtual environment python (venv)
   ```sh
